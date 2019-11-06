@@ -1,0 +1,16 @@
+
+img{
+  width: 100%;
+  height:auto;
+}
+.over_img {
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   width: max-content;
+   height: max-content;
+   color:black;
+}

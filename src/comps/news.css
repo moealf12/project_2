@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+.imgBox{
+  position: relative;
+  width: 800px;
+  height: 150px;
+  background-size: cover;
+  border: 2px solid;
+
+}
+
+.imgBox img{
+
+  width: 100%;
+  transition: .5s
+
+
+}
