@@ -45,9 +45,12 @@ handels(e) {
 
       {
         this.state.books.map(x=>(
-        <BookList key={x.id} bookId={x.id} book_title={x.volumeInfo.title}  book_img={x.volumeInfo.imageLinks !== undefined ? x.volumeInfo.imageLinks.thumbnail : console.log('')}/> ))
+        <BookList key={x.id} bookId={x.id} book_title={x.volumeInfo.title} view={x.volumeInfo.previewLink}  book_img={x.volumeInfo.imageLinks !== undefined ? x.volumeInfo.imageLinks.thumbnail : console.log('')}/> ))
       }
 
+      {
+        console.log(this.state.books)
+      }
 
 
 

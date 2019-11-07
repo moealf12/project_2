@@ -15,6 +15,14 @@ class MoveRow extends Component {
   }
 
 
+  movieWatch(){
+    console.log('trying to view ');
+    console.log(this.props.id+this.props.title);
+    var t = this.props.title.replace(" ","")
+    window.location.href = 'https://yifymovies.tv/movies/'+t
+  }
+
+
 
   render()
 
@@ -29,7 +37,8 @@ class MoveRow extends Component {
       <div>{this.props.date}</div>
       <div><h4>{this.props.name}</h4></div>
       <div><p>{this.props.info}</p></div>
-      <input onClick={this.movieView.bind(this)} type='button' value='View'/><div><button>go</button></div>
+      <input onClick={this.movieView.bind(this)} type='button' value='View'/><div><button></button></div>
+      <input onClick={this.movieWatch.bind(this)} type='button' value='Watch'/><div><button></button></div>
       </Col>
       </Container>
       </>
